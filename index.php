@@ -17,10 +17,10 @@
       <div class="container">
         <ul>
           <li class="logo">Hallo Doc</li>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="jadwal.html">Jadwal Konsultasi</a></li>
-          <li><a href="daftar.html">Daftar Konsultasi</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="index.php">Home</a></li>
+          <li><a href="jadwal.php">Jadwal Konsultasi</a></li>
+          <li><a href="daftar.php">Daftar Konsultasi</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </div>
     </nav>
