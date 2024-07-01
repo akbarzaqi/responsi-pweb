@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  background: #eae9ed;
+  height: 80px;
+  width: 100%;
+}
+.logo {
+  color: rgb(30, 28, 100);
+  font-size: 25px;
+  line-height: 80px;
+  float: inline-start;
+  margin-left: 50px;
+  font-weight: bold;
+}
+nav ul {
+  text-align: center;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: rgb(30, 28, 100);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  background: #1d075f;
+  transition: 0.5s;
+  color: white;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1d075f;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #5434af;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.page-content {
+  padding-bottom: 250px;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+
+.class-title {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #120243;
+}
+
+.card img {
+  height: 80px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card h3 {
+  text-align: center;
+  margin-top: 15px;
+  color: #1d075f;
+}
+.card-section .card {
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  height: auto;
+  margin-right: 30px;
+  margin-top: -90px;
+  z-index: 2;
+  position: relative;
+  padding: 40px 10px 40px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-section .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card .subtitle {
+  font-size: 13px;
+  color: rgb(161, 161, 161);
+  text-align: center;
+}
+
+.schedule .title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.schedule {
+  margin-top: 20px;
+}
+
+.card-schedule {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-schedule .card {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+  padding: 20px 10px 20px 10px;
+}
+
+.card-schedule .name {
+  font-size: 20px;
+  color: #120243;
+  font-weight: 500;
+}
+
+hr {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-schedule .top {
+  display: flex;
+  align-items: center;
+}
+
+.card-schedule .data {
+  margin-left: 15px;
+}
+
+.card-schedule .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.daftar label {
+  display: block;
+}
+
+.daftar input {
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 14px;
+}
+
+.daftar .td input {
+  width: 99%;
+}
+
+.daftar table {
+  padding: 40px 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.daftar .submit {
+ 
+  background-color: green;
+  color: white;
+  width: 20%;
+  align-items: center;
+  padding-bottom: 10px;
+  float: inline-end;
+  font-size: 15px;
+  border-radius: 8px;
+}
