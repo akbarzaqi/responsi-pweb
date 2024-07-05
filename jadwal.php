@@ -30,32 +30,33 @@
       </div>
     </section>
     <section class="card-schedule">
-      <?php
-          $open = fopen("data.txt", "r");
-          while($fill = fgets($open, 80)) {
-            $temp = preg_replace("/;/", "", $fill );
-            $split = explode("|", $fill);
+   <?php
+    $open = fopen("data.txt", "r");
+    while($fill = fgets($open)) {
+        $split = explode("|", $fill);
 
-            echo '<div class="card">
-              <div class="top">
+        echo '<div class="card">
+            <div class="top">
                 <div>
-                  <img src="http://localhost/responsi-pweb/images/user.png" alt="" />
+                    <img src="http://localhost/responsi-pweb/images/user.png" alt="" />
                 </div>
                 <div class="data">
-                  <div class="name">' . $split[0] . '</div>
-                  <div class="email">' . $split[1] . '</div>
-                  <div class="no_telp">' . $split[2] . '</div>
+                    <div class="name">' . $split[0] . '</div>
+                    <div class="email">' . $split[1] . '</div>
+                    <div class="no_telp">' . $split[2] . '</div>
                 </div>
-              </div>
-              <hr />
-              <div class="bottom">
+            </div>
+            <hr />
+            <div class="bottom">
                 <div class="tgl">' . $split[3] . '</div>
                 <div class="jam">' . $split[4] . '</div>
-              </div>
-            </div>';
-          }
-          fclose($open);
-      ?>
+            </div>
+        </div>';
+    }
+    fclose($open);
+?>
+
+ 
     </section>
   </body>
 </html>

@@ -55,16 +55,37 @@
                           <input type="date" name="tgl" id="tgl" required>
                       </td>
                         <td>
-                           <label for="jam">Jam</label>
-                           <input type="text" name="jam" id="jam" required>
+                           <label for="jam" style="margin-top: -13px;">Jam</label>
+                           <!-- <input type="text" name="jam" id="jam" required> -->
+                            <select name="jam" id="jam" style="width: 100%; padding-top: 5px; padding-bottom: 5px">
+                              <option value="08.00 - 10.00">08.00 - 10.00</option>
+                              <option value="10.00 - 12.00">10.00 - 12.00</option>
+                              <option value="12.00 - 14.00">12.00 - 14.00</option>
+                              <option value="14.00 - 16.00">14.00 - 16.00</option>
+                            </select>
                         </td>
                   </tr>
                   <tr>
-                      <td colspan="2"><input type="submit" value="Daftar" class="submit"></td>
+                      <td colspan="2"><input type="submit" value="Daftar" class="submit" onclick="check();"></td>
                   </tr>
               </table>
           </div>
       </section>
     </form>
   </body>
+  <script>
+    const check = () => {
+      var name = (document.form1.name.value);
+      var email = (document.form1.email.value);
+      var no_tlp = (document.form1.no_tlp.value);
+      var tgl = (document.form1.tgl.value);
+      var jam = (document.form1.jam.value);
+
+      if(name == "" || email == "" || no_tlp == "" || tgl == "" || jam == "")
+        alert("Data tidak boleh kosong");
+      else 
+        alert("Data berhasil ditambahkan")
+
+    }
+  </script>
 </html>
